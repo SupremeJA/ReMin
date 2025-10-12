@@ -1,10 +1,13 @@
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./Landing";
 
 function App() {
   return (
-    <>
-      <h2> Hellop World </h2>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Landing />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
