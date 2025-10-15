@@ -1,11 +1,13 @@
+import { List } from "@phosphor-icons/react";
 import React from "react";
 
 const Nav = () => {
   return (
-    <header className="w-full absolute p-1.5 font-sans">
+    <header className="bg-rewhite w-full sticky top-0 px-5 py-4 font-sans">
       <nav className="flex justify-between text-retext">
-        <h1 className="font-semibold text-2xl">ReMin</h1>
+        <h1 className="font-semibold text-3xl text-repurp">ReMin</h1>
 
+        <List size={32} className="md:hidden" />
         <ul className="md:flex hidden gap-10">
           <li>About</li>
           <li>SignUp</li>

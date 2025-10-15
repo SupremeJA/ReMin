@@ -1,9 +1,11 @@
 import Nav from "./components/Nav";
+import Hero from "./sections/Hero";
 
 const Landing = () => {
   return (
-    <main className="bg-rewhite">
+    <main>
       <Nav />
+      <Hero />
     </main>
   );
 };

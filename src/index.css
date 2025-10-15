@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+body {
+  background-color: var(--color-rewhite);
+  color: var(--color-retext);
+}
+
 @theme {
   --color-repurp: #b9a0e7;
   --color-rewhite: #f7f1e8;
