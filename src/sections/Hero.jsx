@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
       <div className="rounded-2xl bg-blue-300 w-full overflow-hidden shadow-lg">
         <img
-          src="https://i.pinimg.com/1200x/a6/a6/5b/a6a65ba7cd4281c32baa9c9fa90920c5.jpg"
+          src="https://i.pinimg.com/1200x/21/60/41/2160419d424db2f52946448bd2501770.jpg"
           alt="mockup"
           className="object-cover"
         />

@@ -21,11 +21,8 @@ const Featured = () => {
   }));
 
   return (
-    <section
-      className="flex flex-col justify-center py-12 border-b-2"
-      id="featured"
-    >
-      <h2 className="title mb-8 text-center">Stay on track, effortlessly</h2>
+    <section className="flex flex-col justify-center py-12" id="featured">
+      <h2 className="mb-8 text-center">Stay on track, effortlessly</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((c, i) => (
