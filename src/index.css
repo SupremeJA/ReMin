@@ -6,7 +6,15 @@ body {
 }
 
 @theme {
-  --color-repurp: #b9a0e7;
-  --color-rewhite: #f7f1e8;
+  --color-repurp: #c8a2ff;
+  --color-rewhite: #fafafa;
   --color-retext: #2e2a27;
+}
+
+section {
+  @apply max-w-6xl px-7 mx-auto;
+}
+
+.title {
+  @apply text-4xl sm:text-5xl lg:text-7xl font-bold;
 }

@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import Featured from "./sections/Featured";
 import Hero from "./sections/Hero";
 
 const Landing = () => {
@@ -6,6 +7,7 @@ const Landing = () => {
     <main>
       <Nav />
       <Hero />
+      <Featured />
     </main>
   );
 };

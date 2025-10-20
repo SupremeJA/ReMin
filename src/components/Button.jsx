@@ -2,7 +2,9 @@ import React from "react";
 
 const Button = ({ children }) => {
   return (
-    <button className="bg-repurp p-3 rounded-xl w-[50%]">{children}</button>
+    <button className="bg-repurp text-rewhite p-3 rounded-xl">
+      {children}
+    </button>
   );
 };
 
