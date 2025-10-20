@@ -1,8 +1,6 @@
-import React from "react";
-
 const Button = ({ children }) => {
   return (
-    <button className="bg-repurp text-rewhite p-3 rounded-xl">
+    <button className="bg-repurp hover:bg-purple-700 text-rewhite p-3 rounded-xl">
       {children}
     </button>
   );

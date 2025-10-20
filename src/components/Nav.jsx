@@ -8,7 +8,9 @@ const Nav = () => {
 
         <List size={32} className="md:hidden " />
         <ul className="md:flex hidden gap-10">
-          <li>About</li>
+          <li>
+            <a href="#featured">Features</a>
+          </li>
           <li>SignUp</li>
         </ul>
       </nav>

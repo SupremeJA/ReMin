@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-rewhite);
   color: var(--color-retext);
@@ -16,5 +20,5 @@ section {
 }
 
 .title {
-  @apply text-4xl sm:text-5xl lg:text-7xl font-bold;
+  @apply text-3xl md:text-5xl lg:text-6xl font-bold;
 }

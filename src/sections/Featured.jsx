@@ -4,37 +4,24 @@ import {
   EnvelopeSimple,
   Layout,
 } from "@phosphor-icons/react";
+import contents from "../../data/contents.json";
+
+// Map icon strings to actual icon components
+const iconMap = {
+  BellRinging,
+  CalendarCheck,
+  EnvelopeSimple,
+  Layout,
+};
 
 const Featured = () => {
-  const cards = [
-    {
-      title: "Smart Reminders",
-      subtitle: "Never miss what matters",
-      body: "Set one-time or recurring reminders that arrive right when you need them.",
-      icon: BellRinging,
-    },
-    {
-      title: "Calendar Sync",
-      subtitle: "Stay perfectly in sync.",
-      body: "ReMin connects with Google Calendar so your plans are always aligned.",
-      icon: CalendarCheck,
-    },
-    {
-      title: "Inbox Delivery",
-      subtitle: "Your reminders, where you already are.",
-      body: "Get gentle nudges directly through your email — no app clutter.",
-      icon: EnvelopeSimple,
-    },
-    {
-      title: "Distraction-Free",
-      subtitle: "Focus on tasks, not tabs.",
-      body: "A clean, minimal dashboard designed for calm productivity.",
-      icon: Layout,
-    },
-  ];
+  const cards = contents.featuredCards.map((card) => ({
+    ...card,
+    icon: iconMap[card.icon], // Convert icon string to component
+  }));
 
   return (
-    <section className="py-12">
+    <section className="py-12" id="featured">
       <h1 className="title mb-8 text-center">Stay on track, effortlessly</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

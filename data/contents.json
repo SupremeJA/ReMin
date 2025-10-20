@@ -1,0 +1,28 @@
+{
+    "featuredCards" : [
+        {
+      "title": "Smart Reminders",
+      "subtitle": "Never miss what matters",
+      "body": "Set one-time or recurring reminders that arrive right when you need them.",
+      "icon": "BellRinging"
+    },
+    {
+      "title": "Calendar Sync",
+      "subtitle": "Stay perfectly in sync.",
+      "body": "ReMin connects with Google Calendar so your plans are always aligned.",
+      "icon": "CalendarCheck"
+    },
+    {
+      "title": "Inbox Delivery",
+      "subtitle": "Your reminders, where you already are.",
+      "body": "Get gentle nudges directly through your email — no app clutter.",
+      "icon": "EnvelopeSimple"
+    },
+    {
+      "title": "Distraction-Free",
+      "subtitle": "Focus on tasks, not tabs.",
+      "body": "A clean, minimal dashboard designed for calm productivity.",
+      "icon": "Layout"
+    }
+    ]
+}
