@@ -2,10 +2,10 @@ import Button from "../components/Button";
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-1 py-16 gap-20 h-full justify-center sm:text-wrap md:items-center md:px-10 border-b-2">
+    <section className="section-full grid grid-cols-1 py-16 gap-20 justify-center sm:text-wrap md:items-center md:px-10 border-b-2">
       <div className=" flex flex-col items-center text-center gap-4 md:gap-5 md:items-center ">
         <h1 className="title">Never forget what truly matters.</h1>
-        <p className="text-base md:text-lg lg:text-xl md:w-[60%]">
+        <p className="text-base md:text-lg lg:text-xl leading-relaxed">
           ReMin keeps your tasks and events in sync; with smart reminders that
           reach you by email or Google Calendar.
         </p>

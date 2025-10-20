@@ -1,8 +1,24 @@
 import { List } from "@phosphor-icons/react";
+import { useState, useEffect } from "react";
 
 const Nav = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-rewhite w-full sticky top-0 px-5 py-4 font-sans z-10 md:px-10">
+    <header
+      className={`bg-rewhite/95 backdrop-blur-sm w-full sticky top-0 px-5 py-4 font-sans z-10 md:px-10 transition-shadow duration-200 ${
+        isScrolled ? "shadow-md" : ""
+      }`}
+    >
       <nav className="flex justify-between text-retext">
         <h1 className="font-semibold text-3xl text-repurp">ReMin</h1>
 

@@ -21,8 +21,11 @@ const Featured = () => {
   }));
 
   return (
-    <section className="py-12" id="featured">
-      <h1 className="title mb-8 text-center">Stay on track, effortlessly</h1>
+    <section
+      className="flex flex-col justify-center py-12 border-b-2"
+      id="featured"
+    >
+      <h2 className="title mb-8 text-center">Stay on track, effortlessly</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((c, i) => (
@@ -36,12 +39,12 @@ const Featured = () => {
                 {c.icon && <c.icon size={32} />}
               </div>
               <div>
-                <h2
+                <h3
                   id={`featured-${i}-title`}
                   className="text-lg font-semibold"
                 >
                   {c.title}
-                </h2>
+                </h3>
                 <p className="text-sm text-neutral-600">{c.subtitle}</p>
               </div>
             </div>
